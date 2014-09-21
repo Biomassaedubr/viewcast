@@ -1,0 +1,57 @@
+{
+  "version": "1",
+  "name": "DayCast",
+  "launch_path": "/index.html",
+  "description": "Boilerplate Firefox OS app with example use cases to get started",
+  "icons": {
+    "16": "/images/logo16.png",
+    "32": "/images/logo32.png",
+    "48": "/images/logo48.png",
+    "60": "/images/logo60.png",
+    "64": "/images/logo64.png",
+    "90": "/images/logo90.png",
+    "120": "/images/logo120.png",
+    "128": "/images/logo128.png"
+  },
+  "developer": {
+    "name": "Wilfried Hounyo",
+    "url": "http://wilfriede.me"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+    "desktop-notification": {
+      "description": "To show notifications"
+    },
+    "geolocation": {
+      "description": "Marking out user location"
+    },
+    "alarms": {
+      "description": "Scheduling alarms"
+    }
+  },
+  "locales": {
+    "de": {
+      "name": "DayCast",
+      "description": "Day Casting App"
+    },
+   "en": {
+      "name": "DayCast",
+      "description": "Day Casting App"
+    },
+    "en-US": {
+      "name": "DayCast",
+      "description": "Boilerplate Firefox OS app with example use cases to get started"
+    },
+    "es": {
+      "name": "DayCast",
+      "description": "App base para Firefox OS para Day Casting"
+    },
+    "fr": {
+      "name": "DayCast",
+      "description": "Modèle d’application pour Firefox OS pour day casting"
+    }
+  }
+}

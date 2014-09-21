@@ -1,0 +1,185 @@
+/*
+	Helios by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select
+	{
+		font-size: 12.5pt;
+		line-height: 1.5em;
+	}
+
+	h2
+	{
+		font-size: 1.75em;
+	}
+	
+	h3
+	{
+		font-size: 1.25em;
+	}
+	
+	hr
+	{
+		top: 3em;
+		margin-bottom: 6em;
+	}
+
+	/* Section/Article */
+
+		section,
+		article,
+		.row > section,
+		.row > article
+		{
+			margin-bottom: 2em;
+		}
+		
+			section:last-child,
+			article:last-child
+			{
+				margin-bottom: 0;
+			}
+
+			header
+			{
+			}
+
+				header > p
+				{
+					font-size: 1.25em;
+				}
+
+	/* Image */
+
+		.image
+		{
+		}
+
+			.image.featured
+			{
+				margin: 0 0 2em 0;
+			}
+			
+			.image.left
+			{
+				margin: 0 1em 1em 0;
+			}
+			
+			.image.centered
+			{
+				margin: 0 0 1em 0;
+			}
+
+	/* List */
+
+		ul
+		{
+		}
+
+			ul.actions
+			{
+			}
+			
+				form ul.actions
+				{
+					margin-top: 0;
+				}
+			
+				ul.actions li
+				{
+					display: block;
+					margin: 0.75em 0 0 0;
+				}
+				
+				ul.actions li:first-child
+				{
+					margin-top: 0;
+				}
+				
+			ul.menu
+			{
+				height: auto;
+				text-align: center;
+			}
+			
+				ul.menu li
+				{
+					display: block;
+					border: 0;
+					padding: 0.75em 0 0 0;
+					margin: 0;
+				}
+				
+				ul.menu li:first-child
+				{
+					padding-top: 0;
+				}
+
+			ul.icons
+			{
+				font-size: 1em;
+				padding: 0.35em 0.5em 0.35em 0.5em;
+			}
+
+				ul.icons li
+				{
+				}
+
+					ul.icons li a
+					{
+						width: 2.25em;
+					}
+
+	/* Button */
+
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		.button
+		{
+			display: block;
+			padding: 0;
+			line-height: 3em;
+			width: 100%;
+		}
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+/*********************************************************************************/
+/* Carousel                                                                      */
+/*********************************************************************************/
+
+	.carousel
+	{
+		padding: 0.5em 0 0.5em 0;
+	}
+
+		.carousel .reel
+		{
+			padding: 0 0.5em 0 0.5em;
+		}
+	
+		.carousel article
+		{
+			width: 14em;
+			padding-bottom: 2em;
+			margin: 0 0.5em 0 0;
+		}
+
+			.carousel article .image
+			{
+				margin-bottom: 2em;
+			}

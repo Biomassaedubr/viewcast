@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Privileged app</title>
+        <meta name="description" content="A privileged app stub">
+
+        <!--
+          viewport allows you to control how mobile browsers will render your content.
+          width=device-width tells mobile browsers to render your content across the
+          full width of the screen, without being zoomed out (by default it would render
+          it at a desktop width, then shrink it to fit.)
+          Read more about it here:
+          https://developer.mozilla.org/Mozilla/Mobile/Viewport_meta_tag
+        -->
+        <meta name="viewport" content="width=device-width">
+<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="js/libs/jquery.min.js"></script>
+        <script src="js/libs/jquery.dropotron.min.js"></script>
+        <script src="js/libs/jquery.scrolly.min.js"></script>
+        <script src="js/libs/jquery.onvisible.min.js"></script>
+        <script src="js/libs/skel.min.js"></script>
+        <script src="js/libs/skel-layers.min.js"></script>
+        <script src="js/libs/init.js"></script>
+        <script src="js/libs/headroom.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+            <link rel="stylesheet" href="css/style-noscript.css" />
+        </noscript>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        <link rel="stylesheet" href="css/app.css">
+
+        <!--
+        Inline JavaScript code is not allowed for privileged and certified apps,
+        due to Content Security Policy restrictions.
+        You can read more about it here: https://developer.mozilla.org/Apps/CSP
+        Plus keeping your JavaScript separated from your HTML is always a good practice!
+
+        We're also using the 'defer' attribute. This allows us to tell the browser that
+        it should not wait for this file to load before continuing to load the rest of
+        resources in the page. Then, once everything has been loaded, it will parse and
+        execute the deferred files.
+        Read about defer: https://developer.mozilla.org/Web/HTML/Element/script#attr-defer
+        -->
+        <script type="text/javascript" src="js/app.js" defer></script>
+        <!--
+        The following two lines are for loading the localisations library
+        and the localisation data-so people can use the app in their
+        own language (as long as you provide translations).
+        -->
+        <link rel="prefetch" type="application/l10n" href="data/locales.ini" />
+        <script type="text/javascript" src="js/libs/l10n.js" defer></script>
+    </head>
+    <body>
+        <!-- Carousel --><ul class="row"><i id='cast-recorder'><a href="#" class="icon fa-microphone"><span class="label">Record</span></a></i><i id='cast-video-recorder'><a href="#" class="icon fa-video-camera"><span class="label">Video</span></a></i><i id='cast-imager'><a href="#" class="icon fa-image"><span class="label">Image</span></a></i><i id='cast-writer'><a href="#" class="icon fa-pencil stop"><span class="label">Note</span></a></i><i id='cast-sync'><a href="#" class="icon fa-refresh record"><span class="label">SYNC</span></a></i></ul>
+
+            <section class="carousel">
+                <div class="reel">
+
+                    <article>
+                        <a href="#" class="image featured sound-clips"><img src="images/pic01.jpg" alt="" /></a>
+                        <header>
+                            <h3><a href="#">Pulvinar sagittis congue</a></h3>
+                        </header>
+                        <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>                           
+                    </article>
+                
+                   
+                </div>
+            </section>
+            <div class="row">
+                        <div class="12u">
+
+                            <!-- Copyright -->
+                                <div class="copyright">
+                                    <ul class="menu">
+                                        <li class="daily-cast">Today</li><li class="daily-cast">Previous Day</li>
+                                    </ul>
+                                </div>
+                            
+                        </div>
+                    
+            </div>
+    </body>
+</html>

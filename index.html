@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Exchange the line above for this to enable offline support
+    <html manifest="manifest.appcache">
+
+    Please make your homework before doing this:
+        http://www.alistapart.com/articles/application-cache-is-a-douchebag/
+        http://appcachefacts.info
+
+    This might be necessary to set up on your server, to make sure
+    files are updated when the appcache file itself is:
+        https://github.com/robnyman/Firefox-OS-Boilerplate-App/blob/gh-pages/.htaccess
+ -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="js/libs/jquery.min.js"></script>
+        <script src="js/libs/jquery.dropotron.min.js"></script>
+        <script src="js/libs/jquery.scrolly.min.js"></script>
+        <script src="js/libs/jquery.onvisible.min.js"></script>
+        <script src="js/libs/skel.min.js"></script>
+        <script src="js/libs/skel-layers.min.js"></script>
+        <script src="js/libs/init.js"></script>
+        <script src="js/libs/headroom.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+            <link rel="stylesheet" href="css/style-noscript.css" />
+        </noscript>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/headers.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/toolbars.css">
+    <title>Firefox OS Boilerplate App</title>
+        <!-- Localization -->
+    <link rel="resource" type="application/l10n" href="locales/locales.ini" />
+    <script type="application/javascript" src="js/l10n.js"></script>
+    <base target="_blank">
+</head>
+
+<body>
+
+    <section role="region">
+        <header>
+            <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+            <div id="online-status" title="Online"></div>
+            <menu type="toolbar">
+                <button id="install"><span class="icon icon-add">add</span></button>
+            </menu>
+            <h1 data-l10n-id="app-heading">
+                Firefox OS Boilerplate App
+            </h1>
+        </header>
+    </section>
+
+
+    <div id="main">
+
+        <p id="installation-instructions">Press the + button in the top right corner to install this app.</p>
+
+        <h2 data-l10n-id="web-activities">WebActivities</h2>
+        <button id="take-note" data-l10n-id="take-note">Take a note</button>
+        <button id="pick-anything" data-l10n-id="pick-anything">Pick anything</button>
+        <button id="geolocation" data-l10n-id="geolocation">Geolocation</button>
+        <div id="geolocation-display" data-l10n-id="golocation-values">Geolocation coords should show up here</div>
+        <button id="view-display" data-l10n-id="view-display">View My Story</button>
+         <section id='hiddenCarousel' class="carousel">
+                <div id='hiddenCarousel' class="reel">
+                    
+                </div>
+            </section>
+    </div>
+
+    <footer>
+        <div role="toolbar">
+            <ul>
+                <li><button id="reload" class="update" data-l10n-id="update-button">Update</button></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/webapp.js"></script>
+    <script type="text/javascript" src="js/offline.js"></script>
+
+    <!--
+        Loosely based on fxosstub: https://github.com/Jaxo/fxosstub
+    -->
+
+</body>
+</html>
